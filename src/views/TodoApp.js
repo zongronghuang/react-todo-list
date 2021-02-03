@@ -1,7 +1,3 @@
-import '../App.scss';
-
-import React from "react";
-
 import { useState, useEffect } from "react";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
@@ -10,7 +6,7 @@ import AddTodo from '../components/AddTodo.js'
 
 import { getTodos, createTodo, deleteTodo, patchTodo } from '../api/todos.js'
 
-export default function App() {
+export default function TodoApp() {
   const [inputValue, setInputValue] = useState(""); // controlled component 專用 state
   const [todos, setTodos] = useState([])
 
@@ -184,3 +180,4 @@ export default function App() {
     </div>
   )
 }
+
